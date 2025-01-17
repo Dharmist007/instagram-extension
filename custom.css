@@ -1,0 +1,333 @@
+#customDiv, #reCustomDiv {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.pv-top-card-v2-ctas {
+  flex-wrap: wrap;
+}
+
+#customDiv label, #reCustomDiv label {
+  margin-top: 0;
+  font-size: 14px;
+  color: #111;
+}
+
+.customSelectWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+}
+
+#customDiv input, #customDiv select, #customDiv textarea, 
+#reCustomDiv input, #reCustomDiv textarea, #reCustomDiv select {
+  margin-bottom: 10px;
+}
+
+.notesWrap {
+  width: 100%;
+}
+
+#customDiv select, #customDiv select:hover, #customDiv select:focus,
+#customDiv textarea, #customDiv textarea:hover, #customDiv textarea:focus,
+#customDiv input, #customDiv input:hover, #customDiv input:focus,
+#customDiv input[type="date"], #customDiv input[type="date"]:hover, #customDiv input[type="date"]:focus,
+#reCustomDiv input[type="date"], #reCustomDiv input[type="date"]:hover, #reCustomDiv input[type="date"]:focus,
+#reCustomDiv input, #reCustomDiv input:hover, #reCustomDiv:focus,
+#reCustomDiv select, #reCustomDiv select:hover, #reCustomDiv select:focus,
+#reCustomDiv textarea, #reCustomDiv textarea:hover, #reCustomDiv textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+.customSelectWrap select,
+.customSelectWrap select:hover,
+.customSelectWrap select:focus {
+  min-width: 240px;
+  padding-right: 22px;
+}
+
+#customDiv select,
+#reCustomDiv select {
+  padding-right: 22px;
+  height: 34px;
+  background-position: top -31rem right 0.05rem;
+}
+
+#customDiv select:focus,
+#customDiv textarea:focus,
+#reCustomDiv select:focus,
+#reCustomDiv textarea:focus {
+  border: 1px solid #000;
+  outline: 0 !important;
+}
+
+.customSelectWrapper .addProfile,
+.customSelectWrapper .addProfile-inactive,
+#reCustomDiv .proceed-inactive,
+#reCustomDiv .proceed {
+  background-color: #161542;
+  border-color: #161542 !important;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 34px;
+  letter-spacing: .3px;
+  line-height: 32px;
+  padding: 0 12px !important;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  max-width: 110px;
+}
+
+.customSelectWrapper .addProfile-inactive,
+#reCustomDiv .proceed-inactive {
+  background-color: #8f8ebc;
+  border-color: #8f8ebc !important;
+}
+
+#reCustomDiv .proceed-inactive,
+#reCustomDiv .proceed {
+  margin-left: 0;
+  width: 100px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#customDiv select:focus,
+#customDiv textarea:focus,
+#reCustomDiv textarea:focus,
+#reCustomDiv select:focus {
+  border: 1px solid #000;
+  outline: 0 !important;
+}
+
+#customDiv textarea, #reCustomDiv textarea {
+  resize: none;
+}
+
+#reCustomDiv input, #customDiv input {
+  width: 100%;
+  height: 34px;
+  outline: 0 !important;
+}
+
+.autocomplete-list {
+  margin-top: 5px;
+  max-height: 172px;
+  overflow: auto;
+}
+
+.autocomplete-list li {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 6px 5px;
+}
+
+.genderAndJobFuncWrap, .dateWrapper, .salaryWrapper, #employmentDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genderAndJobFuncWrap #genderDiv,
+.genderAndJobFuncWrap #jobFunctionDiv,
+.dateWrapper #startDateWrap, .dateWrapper #endDateWrap,
+.salaryWrapper #currSalaryDiv, .salaryWrapper #expectedSalaryDiv,
+#employmentDate #empStartDateWrapper, #employmentDate #empEndDateWrapper {
+  width: 50%;
+  padding-right: 5px;
+}
+
+.genderAndJobFuncWrap #jobFunctionDiv,
+.dateWrapper #endDateWrap, .salaryWrapper #expectedSalaryDiv,
+#employmentDate #empEndDateWrapper {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.iconDiv {
+  background-color: #fff;
+  display: block;
+  border-top: 1px solid #161542;
+  margin-top: 15px;
+  border-bottom: 1px solid #161542;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.iconDiv label {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-top: 18px;
+}
+
+.iconDiv p {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.iconDiv div {
+  color: #161542;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.newCustomWrapper {
+  width: 100%;
+}
+
+#employmentHistoryDiv {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#employmentHistoryLabel {
+  font-size: 16px !important;
+  color: #161542;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#reCustomDiv input[type=checkbox]+label:before, #reCustomDiv input[type=radio]+label:before {
+  height: 18px !important;
+  width: 18px !important;
+  top: 1px !important;
+}
+
+#reCustomDiv input[type=checkbox]+label:after {
+  height: 16px !important;
+    left: 1px !important;
+    top: 2px !important;
+    width: 16px !important;
+    box-shadow: none !important;
+}
+
+#reCustomDiv input[type=checkbox]:checked:hover+label:before, #reCustomDiv input[type=radio]:checked:hover+label:before {
+  background-color: #161542;
+  box-shadow: none !important;
+}
+
+#reCustomDiv input[type=checkbox]+label, input[type=radio]+label {
+  padding-left: 28px !important;
+  box-shadow: none !important;
+  color: #111 !important;
+}
+
+#reCustomDiv input[type=checkbox]:checked:focus+label:before, 
+#reCustomDiv input[type=radio]:checked:focus+label:before {
+  outline: 0 !important;
+  background-color: #161542 !important;
+}
+
+#specializationOutputDiv, #industriesOutputDiv, #computerSkillsOutputDiv, #certificationsOutputDiv, #prefLocOutputDiv {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #161542;
+}
+
+#fresherDiv {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+#employmentDate{
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+}
+
+#specializationsDiv {
+  width: 100%;
+}
+
+#infoDiv div {
+	margin-bottom: 20px;
+}
+
+#infoDiv label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #656565;
+}
+
+#infoDiv label {
+	font-size: 12px;
+}
+
+#infoDiv input,
+#infoDiv select {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 6px;
+	color: #222;
+	font-size: 14px;
+	border: 1px solid rgba(0,0,0,0.1);
+	height: 36px;
+	width: 75%;
+}
+
+#infoDiv input:focus,
+#infoDiv select:focus {
+	outline: 0;
+	border-color: #161542;
+}
+#infoDiv button {
+	background-color: #161542;
+	border: 1px solid #161542; 
+	border-radius: 6px;
+	color: #fff;
+	font-size: 14px;
+	height: 35px;
+	padding: 0 25px;
+	line-height: 33px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+}
+
+#infoDiv button {
+	margin: 25px auto 5px;
+	display: block;
+}

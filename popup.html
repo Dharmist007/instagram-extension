@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Instagram</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="popup.css" />
+
+</head>
+
+<body>
+	<div id="popupBody">
+		<div id="loginDiv">
+			<div>
+				<label>Email</label>
+				<input id="email" type="text" placeholder="Enter" />
+				<span id="error" style="color:rgb(117, 13, 13); display:none;">Invalid email address</span>
+			</div>
+			<div>
+				<label>Password</label>
+				<input id="pwd" type="password" placeholder="Enter" />
+			</div>
+			<button id="login">Login</button>
+			<div class="overlay-loader" id="spinnerId" style="display:none;">
+				<div class="spinner"></div>
+			</div>
+		</div>
+
+		<div class="instaSettings" id="profileDiv" style="display:none;">
+			<!-- Logout Section -->
+			<div id="logoutDiv" style="display: block">
+				
+			  <button id="logoutBtn">
+				<i class="fa-solid fa-power-off"></i>
+			  </button>
+			</div>
+
+			<!-- Header Section -->
+			<div class="header" id="headerDiv">
+			  <h2>Insta Dashboard</h2>
+			  <div class="user-info">
+				<p><strong>Email:</strong> <span id="userEmail">johndoe@example.com</span></p>
+			  </div>
+			</div>
+	  
+			<!-- Upload Section -->
+			<div id="uploadDiv">
+			  <!-- <h3>Select and Upload File</h3> -->
+			  <button id="uploadButton">Upload</button>
+			</div>
+			<div id="notification"></div>
+			<div id="infoDiv">
+				<button id="submitData">Start</button>
+				<button id="stopExtension">Stop</button>
+			</div>
+		  </div>
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+
+</html>

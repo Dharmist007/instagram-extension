@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 3,
+  "name": "insta",
+  "description": "insta",
+  "version": "1.0",
+  "action": {
+      "default_icon": "superman.jpg",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.instagram.com/*"],
+      "run_at": "document_end",
+      "js": [ "Content.js", "config.js", "moment.js"],
+      "css": ["custom.css"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting", "tabs",  "pageCapture", "storage", "alarms", "webNavigation"],
+
+  "host_permissions": ["https://*.instagram.com/*","https://api-insta.logic-square.com/api/v1/*"]
+}

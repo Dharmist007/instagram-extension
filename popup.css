@@ -1,0 +1,223 @@
+* {
+	box-sizing: border-box;
+}
+
+#popupBody {
+	width: 300px;
+	padding: 5px;
+}
+
+#loginDiv div,
+#logoutDiv div {
+	margin-bottom: 20px;
+}
+
+#loginDiv label,
+#logoutDiv label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #656565;
+}
+
+#logoutDiv label {
+	font-size: 12px;
+}
+
+#loginDiv input,
+#logoutDiv input,
+#logoutDiv select {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 6px;
+	color: #222;
+	font-size: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	height: 36px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#loginDiv input:focus,
+#logoutDiv input:focus,
+#logoutDiv select:focus {
+	outline: 0;
+	border-color: #161542;
+}
+
+#loginDiv button,
+#logoutDiv button {
+	background-color: #161542;
+	border: 1px solid #161542;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 14px;
+	height: 35px;
+	padding: 0 25px;
+	line-height: 33px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+#logoutDiv button {
+	margin: 25px auto 5px;
+	display: block;
+}
+
+#logoutDiv button {
+	background-color: #fff;
+	color: #222;
+	font-size: 14px;
+	height: 26px;
+	padding: 0 8px;
+	line-height: 24px;
+	display: block;
+	margin: -3px 0 5px auto;
+	cursor: pointer;
+	border: 0;
+}
+
+#logoutDiv button:hover {
+	color: #f16667;
+}
+
+#errorLabel {
+	color: #f16667;
+}
+
+.overlay-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner {
+	width: 50px;
+	height: 50px;
+	border: 6px solid #f3f3f3;
+	border-top: 6px solid #3498db;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.instaSettings {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+.header {
+	background-color: #f4f4f4;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.header h2 {
+	margin: 0;
+	color: #333;
+}
+
+.user-info {
+	margin-top: 10px;
+}
+
+.user-info p {
+	margin: 5px 0;
+	color: #555;
+}
+
+#logoutDiv {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#logoutBtn {
+	background-color: #e74c3c;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#logoutBtn i {
+	margin-right: 5px;
+}
+
+#uploadDiv {
+	text-align: center;
+	padding: 10px;
+}
+
+#uploadButton {
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#fileInput {
+	margin-bottom: 10px;
+}
+
+#status {
+	margin-top: 10px;
+	color: #888;
+}
+
+#notification {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #0d05f7;
+	text-align: center;
+}
+
+#submitData {
+	background-color: #34db4a;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	color: azure;
+	font-weight: bold;
+}
+#stopExtension {
+	background-color: #d81919;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	color: azure;
+	font-weight: bold;
+}
+#infoDiv {
+	text-align: center;
+	margin-top: 10px;
+}
